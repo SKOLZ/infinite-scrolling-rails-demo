@@ -1,11 +1,11 @@
-const THRESHOLD = 300;
-const $paginationElem = $('.pagination');
-const $window = $(window);
-const $document = $(document);
-const paginationUrl = $paginationElem.attr('data-pagination-endpoint');
-const pagesAmount = $paginationElem.attr('data-pagination-pages');
-let currentPage = 1;
-let baseEndpoint;
+var THRESHOLD = 300;
+var $paginationElem = $('.pagination');
+var $window = $(window);
+var $document = $(document);
+var paginationUrl = $paginationElem.attr('data-pagination-endpoint');
+var pagesAmount = $paginationElem.attr('data-pagination-pages');
+var currentPage = 1;
+var baseEndpoint;
 
 /* validate if the pagination URL has query params */
 if (new URL(paginationUrl).search != "") {
@@ -16,7 +16,7 @@ if (new URL(paginationUrl).search != "") {
 
 /* initialize pagination */
 $paginationElem.hide()
-let isPaginating = false
+var isPaginating = false
 
 /* listen to scrolling */
   $window.on('scroll', _.debounce(function () {
