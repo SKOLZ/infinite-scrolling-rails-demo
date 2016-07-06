@@ -47,7 +47,7 @@ development: &default
 # Do not set this db to the same as development or production.
 test: &test
   <<: *default
-  database: rails-bootstrap_test
+  database: rails-infinite_scrolling_rails
 
 production:
   adapter: postgresql

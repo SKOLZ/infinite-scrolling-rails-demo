@@ -40,6 +40,10 @@ gem 'loadjs'
 
 gem 'carrierwave'
 
+gem 'lodash-rails'
+
+gem 'kaminari'
+
 gem 'turbolinks'
 
 gem 'jquery-turbolinks'

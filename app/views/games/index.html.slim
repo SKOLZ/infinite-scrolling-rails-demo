@@ -1,5 +1,5 @@
-= render 'games/_header'
+= render 'games/header'
 .games.js-items-container
-  = render 'games/_item', collection: @games
+  = render partial: 'games/item', collection: @games
 .pagination data-pagination-endpoint=@endpoint data-pagination-pages=@page_amount
   = image_tag 'ajax-loader.gif'
