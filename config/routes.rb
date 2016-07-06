@@ -1,5 +1,5 @@
 RailsBootstrap::Application.routes.draw do
-  root to: 'application#index'
+  root to: 'games#index'
 
   require 'sidekiq/web'
   mount Sidekiq::Web, at: 'sidekiq'
