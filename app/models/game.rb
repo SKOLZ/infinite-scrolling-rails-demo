@@ -1,3 +1,3 @@
 class Game < ActiveRecord::Base
-  paginates_per 1
+  paginates_per Rails.application.secrets.scrolling
 end

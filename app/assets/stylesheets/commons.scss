@@ -1,0 +1,29 @@
+.header {
+  background: $black;
+  padding: 20px 40px;
+  margin: 20px;
+  text-align: center;
+  color: $white;
+  letter-spacing: 1px;
+}
+
+.games {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $black;
+  border-radius: 4px;
+  justify-content: center;
+  min-width: 600px;
+}
+
+.game-cover {
+  max-width: 600px;
+}
